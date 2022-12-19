@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+   <children>
+      <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btDot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" prefHeight="29.0" prefWidth="120.0" style="-fx-background-color: #E6A8D7;" text="." textAlignment="CENTER" textFill="#0044ff" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="bt02" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #6C4675;" text="2" textFill="#c600ff" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="bt05" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #FAF0E6;" text="5" textFill="#44ff00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="bt04" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #F19CBB;" text="4" textFill="#00ccff" GridPane.rowIndex="1" />
+            <Button fx:id="bt08" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #006D5B;" text="8" textFill="#ff8400" />
+            <Button fx:id="bt06" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #59351F;" text="6" textFill="#e1ff00" GridPane.columnIndex="2" />
+            <Button fx:id="btX" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #4169E1;" text="X**" textFill="#00c3ff" GridPane.rowIndex="3" />
+            <Button fx:id="bt01" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: F0E68C;" text="1" textFill="RED" GridPane.rowIndex="2" />
+            <Button fx:id="bt03" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #FF033E;" text="3" textFill="#0400ff" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="bt00" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: green;" text="0" textFill="#ffb700" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="bt07" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #DD80CC;" text="7" textAlignment="JUSTIFY" textFill="RED" GridPane.columnIndex="1" />
+            <Button fx:id="bt11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#digitClicked" style="-fx-background-color: #BAACC7;" text="11" textFill="#fffb00" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btMinus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" text="-" textFill="#00b2ff" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btMlt" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" text="*" textFill="#00b2ff" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="btRavno" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" text="=" textFill="#00b2ff" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="btKoren" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" text="√" textFill="#00b2ff" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btProh" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" prefHeight="25.0" prefWidth="26.0" text="\%" textFill="#00b2ff" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="btLog" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" text="log2" textFill="#00b2ff" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="btDiv" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" text="/" textFill="#00b2ff" GridPane.columnIndex="3" />
+            <Button fx:id="btPlus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" text="+" textFill="#00b2ff" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="buffer" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="96.0" prefWidth="362.0" text="I am GENIOUS" textFill="RED" underline="true">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+            <Button fx:id="btC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opperationClicked" prefHeight="100.0" prefWidth="119.0" text="C" textFill="#00b2ff" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
